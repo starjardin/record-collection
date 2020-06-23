@@ -1,35 +1,43 @@
 console.log("Hello world!")
-const music = [
-  {
+const music = {
+  2018: {
     title: "Smoling secretly part 2",
     artistName: "Mijah",
     releaseYear: 2018,
-    trNumberOfTracks: 2,
+    trNumberOfTracks:[
+      "Being in gail",
+      "I love my mother in low"
+    ],
     socialMediaLink: "https://.twitter-madagascar.com",
   },
-  {
+  2020: {
     title: "Smoling secretly part 4",
     artistName: "Mijah",
     releaseYear: 2020,
-    trNumberOfTracks: 3,
+    trNumberOfTracks: [
+      "rendez-vous"
+    ],
     socialMediaLink: "https://.github-madagascar.com",
   },
-  {
+  2019: {
     title: "Smoling secretly part 3",
     artistName: "Mijah",
     releaseYear: 2019,
-    trNumberOfTracks: 3,
+    trNumberOfTracks: [
+      "I love you"
+    ],
     socialMediaLink: "https://.youtube-madagascar.com",
   },
-  {
+  2016: {
     title: "Smoling secretly part 1",
     artistName: "Mijah",
     releaseYear: 2016,
-    trNumberOfTracks: 1,
+    trNumberOfTracks: [
+      "you can go"
+    ],
     socialMediaLink: "https://.facebook-madagascar.com",
   },
-];
-
+};
 
 let menu = `
 1 Show all records
@@ -41,24 +49,17 @@ let menu = `
 
 let startMenu = Number(prompt(`You have a choice between one to fiive: ${menu} `))
 
-const musicLists = () => {
+const musicCollection = () => {
   for (let i = 0; i < music.length; i++) {
-    let myMusic = `Title: ${music[i].title},
-Artist name: ${music[i].artistName},
-Release year: ${music[i].releaseYear},
-Number of tracks: ${music[i].trNumberOfTracks},
-Social media link: ${music[i].socialMediaLink},
-`
-for () {
-  
-}
-alert(myMusic);
+    let musicLists = `
+    ${music.title}
+    `
   }
 }
 
 switch (startMenu) {
   case 1:
-    musicLists();
+    console.log(musicCollection());
     break;
   case 2:
     console.log("add music list");
